@@ -1,0 +1,91 @@
+\documentclass[12pt]{book}
+\usepackage[a5paper]{geometry}
+
+% Input characters
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tipa}
+
+\setlength{\parindent}{1em}
+
+\DeclareUnicodeCharacter{0166}{\barredT}
+\DeclareUnicodeCharacter{0167}{\barredt}
+
+\DeclareRobustCommand{\barredT}{\barredTt{0.5}{0.05}{1.5}{T}}
+\DeclareRobustCommand{\barredt}{\barredTt{0.4}{0}{1.15}{t}}
+\newcommand{\reducedhyphen}[2]{%
+	\raisebox{#1ex}{\scalebox{#2}[0.5]{-}}%
+}
+\newcommand{\barredTt}[4]{%
+	\begingroup
+	\vphantom{#4}%
+	\ooalign{%
+		#4\cr
+		\hidewidth\kern#2em\reducedhyphen{#1}{#3}\hidewidth\cr
+	}%
+	\endgroup
+}
+
+\begin{document}
+\begin{titlepage}
+
+\author{Krizhanich Research Institute of Novoslovnica}
+\title{%
+	Novoslovnica-English Dictionary
+\vfill
+}
+\date{2015-2019}
+
+\end{titlepage}
+
+\frontmatter
+\maketitle
+\include{./content/acknowledgements}
+\include{./content/foreword}
+\tableofcontents
+\mainmatter
+\include{./content/A}
+\include{./content/B}
+\include{./content/V}
+\include{./content/G}
+\include{./content/Ĝ}
+\include{./content/D}
+\include{./content/Đ}
+\include{./content/E}
+\include{./content/É}
+\include{./content/Ě}
+\include{./content/Ž}
+\include{./content/Z}
+\include{./content/I}
+\include{./content/Ï}
+\include{./content/J}
+\include{./content/K}
+\include{./content/L}
+\include{./content/M}
+\include{./content/N}
+\include{./content/O}
+\include{./content/Ô}
+\include{./content/P}
+\include{./content/R}
+\include{./content/Ř}
+\include{./content/S}
+\include{./content/Ŝ}
+\include{./content/T}
+\include{./content/Ŧ}
+\include{./content/U}
+\include{./content/Ų}
+\include{./content/F}
+\include{./content/H}
+\include{./content/C}
+\include{./content/Č}
+\include{./content/Š}
+
+% \bibliographystyle{ieeetr}
+% \bibliography{biblio}
+
+% \addcontentsline{toc}{chapter}{Bibliography}
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}
