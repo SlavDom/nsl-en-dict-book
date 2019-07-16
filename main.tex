@@ -1,12 +1,15 @@
-\documentclass[12pt]{book}
+\documentclass[10pt]{book}
 \usepackage[a5paper]{geometry}
 
 % Input characters
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{tipa}
+\usepackage{multicol}
 
-\setlength{\parindent}{1em}
+\usepackage{graphicx}
+
+\setlength{\parindent}{0cm}
 
 \DeclareUnicodeCharacter{0166}{\barredT}
 \DeclareUnicodeCharacter{0167}{\barredt}
@@ -26,6 +29,7 @@
 	\endgroup
 }
 
+
 \begin{document}
 \begin{titlepage}
 
@@ -34,7 +38,7 @@
 	Novoslovnica-English Dictionary
 \vfill
 }
-\date{2015-2019}
+\date{2018-2019}
 
 \end{titlepage}
 
@@ -44,41 +48,50 @@
 \include{./content/foreword}
 \tableofcontents
 \mainmatter
+
+\begin{multicols}{2}
+
 \include{./content/A}
 \include{./content/B}
-\include{./content/V}
-\include{./content/G}
-\include{./content/Ĝ}
-\include{./content/D}
-\include{./content/Đ}
-\include{./content/E}
-\include{./content/É}
-\include{./content/Ě}
-\include{./content/Ž}
-\include{./content/Z}
-\include{./content/I}
-\include{./content/Ï}
-\include{./content/J}
-\include{./content/K}
-\include{./content/L}
-\include{./content/M}
-\include{./content/N}
-\include{./content/O}
-\include{./content/Ô}
-\include{./content/P}
-\include{./content/R}
-\include{./content/Ř}
-\include{./content/S}
-\include{./content/Ŝ}
-\include{./content/T}
-\include{./content/Ŧ}
-\include{./content/U}
-\include{./content/Ų}
-\include{./content/F}
-\include{./content/H}
 \include{./content/C}
-\include{./content/Č}
-\include{./content/Š}
+% \include{./content/Č}
+% \include{./content/D}
+
+% \include{./content/V}
+% \include{./content/G}
+% \include{./content/Ĝ}
+
+% \include{./content/Đ}
+% \include{./content/E}
+% \include{./content/É}
+% \include{./content/Ě}
+% \include{./content/Ž}
+% \include{./content/Z}
+% \include{./content/I}
+% \include{./content/Ï}
+% \include{./content/J}
+% \include{./content/K}
+% \include{./content/L}
+% \include{./content/M}
+% \include{./content/N}
+% \include{./content/O}
+% \include{./content/Ô}
+% \include{./content/P}
+% \include{./content/R}
+% \include{./content/Ř}
+% \include{./content/S}
+% \include{./content/Ŝ}
+% \include{./content/T}
+% \include{./content/Ŧ}
+% \include{./content/U}
+% \include{./content/Ų}
+% \include{./content/F}
+% \include{./content/H}
+
+
+% \include{./content/Š}
+
+\end{multicols}
 
 % \bibliographystyle{ieeetr}
 % \bibliography{biblio}
